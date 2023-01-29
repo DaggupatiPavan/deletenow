@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl https://ipv4.icanhazip.com > myip
+curl -s https://ipv4.icanhazip.com > myip
 PUBLIC_IP=$(cat myip)
 
 while [ $# -gt 0 ]
